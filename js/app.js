@@ -35,3 +35,38 @@ console.log(carrito.length);
 for (let c = 0; c < carrito.length; c++){
     console.log(carrito[c]);
 }
+
+//break y continue en un for loop//
+
+for (let n = 0; n < 13; n++){
+    if (n === 5) {
+        console.log(`Este es el número: ${n}`);
+        break;
+    };
+    console.log(`Número: ${n}`)
+}
+
+for (let nn = 0; nn < 13; nn++){
+    if (nn === 5) {
+        console.log(`Este es el número: ${nn}`);
+        continue;
+    };
+    console.log(`Número: ${nn}`)
+}
+
+const carrito2 =[
+    { nombre: 'Televisor', precio: 500},
+    { nombre: 'Nevera', precio: 5500, descuento: true},
+    { nombre: 'Estufa', precio: 1500},
+    { nombre: 'Computador', precio: 100},
+    { nombre: 'Altavoz', precio: 1500},
+    {nombre: 'Lavadora', precio: 3500, descuento: true}
+]
+
+for (let m = 0; m < carrito2.length; m++){
+    if (carrito2[m].descuento) {
+        console.log(`El artículo ${carrito2[m].nombre} Tiene descuento`);
+        continue;
+    }
+    console.log(carrito2[m].nombre);
+}
