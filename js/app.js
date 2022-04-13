@@ -70,3 +70,23 @@ for (let m = 0; m < carrito2.length; m++){
     }
     console.log(carrito2[m].nombre);
 }
+
+//Reto Fizz Buzz//
+//3 6 9 12 ...imultiplos de 3 imprimir fizz
+//5 10 15 20 ...multiplos de 5, imprimir buzz
+//multiplos 5 y 3...15 30 45 imprimir fizz buzz
+
+
+for (let nu = 1; nu <= 100; nu++){
+    if (nu % 3 === 0  && nu % 5 === 0) {
+        console.log(`${nu} Fizz Buzz`);
+    } else if (nu % 3 === 0) {
+        console.log(`${nu} Fizz`);
+    } else if (nu % 5 === 0) {
+        console.log(`${nu} Buzz`)
+    }
+}
+
+
+
+
