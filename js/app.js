@@ -157,6 +157,7 @@ carrito3.forEach((producto) => {
 })
 
 
+
 const carrito4 =[
     { nombre: 'Congas', precio: 500},
     { nombre: 'Nevera', precio: 5500},
@@ -171,4 +172,40 @@ carrito4.forEach(item => console.log(item.nombre));
 
 carrito4.map(item => console.log(item));
 //crea un arreglo nuevo//
+
+//for of ...  for in...//
+
+const instrumentos = ['Guitarra', 'Piano', 'Maracas', 'Timbales'];
+for (let artefacto of instrumentos) {
+   console.log(artefacto) 
+} //for of recorre el arreglo mientras haya elementos//
+
+
+const tienda = [
+    { item: 'Pandereta', precio: 500 },
+    { item: 'Pianola', precio: 3500 },
+    { item: 'Guitarron', precio: 900 },
+    { item: 'Tumbadora', precio: 5900 }
+]
+
+for (let articulo of tienda) {
+    console.log(articulo)
+}
+
+
+const automovil = {
+    modelo: 'Renault',
+    year: 2022,
+    motor: '2.4 C3'
+}
+
+for( let propiedad in automovil){
+    console.log(propiedad);
+} //in itera sobre objetos//
+
+for (let [llave, valor] of Object.entries(automovil)) {
+    console.log(llave, valor);
+} //otra forma de recorrer objetos//
+
+
 
