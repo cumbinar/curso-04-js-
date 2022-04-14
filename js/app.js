@@ -97,3 +97,15 @@ while (inicio <= 8) { //esta es la condición
 }
 
 
+let contador = 0; 
+
+while (contador <= 20) {
+    if (contador % 2 === 0) {
+        console.log(`El número ${contador} es PAR`)
+    } else {
+        console.log(`El número ${contador} es IMPAR`)
+    }
+    contador++;
+}
+
+
