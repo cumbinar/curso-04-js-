@@ -109,3 +109,23 @@ while (contador <= 20) {
 }
 
 
+//Do while loop  se ejecuta al menos una vez...//
+
+
+let i = 10000;  //inicio
+
+do {
+    console.log(`Este es el número: ${i}`) 
+    i++;  //incremento
+} while (i <=10); //condición
+
+
+
+let it = 0;  //inicio
+
+do {
+    console.log(`Este es el número: ${it}`) 
+    it++;  //incremento
+} while (it <=10); //condición
+
+
