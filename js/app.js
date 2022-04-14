@@ -72,7 +72,7 @@ for (let m = 0; m < carrito2.length; m++){
 }
 
 //Reto Fizz Buzz//
-//3 6 9 12 ...imultiplos de 3 imprimir fizz
+//3 6 9 12 ...multiplos de 3 imprimir fizz
 //5 10 15 20 ...multiplos de 5, imprimir buzz
 //multiplos 5 y 3...15 30 45 imprimir fizz buzz
 
@@ -87,6 +87,13 @@ for (let nu = 1; nu <= 100; nu++){
     }
 }
 
+//while loop se cumple mientras una condición sea verdadera//
 
+let inicio = 0; //inicializar el while
+while (inicio <= 8) { //esta es la condición
+    
+    console.log(`Este es el número ${inicio}`);
+    inicio++;  //este es el incremento
+}
 
 
