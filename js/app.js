@@ -128,4 +128,47 @@ do {
     it++;  //incremento
 } while (it <=10); //condición
 
+//for each y map  sirve para recorrer arreglos//
+
+const pendientes = ['Tarea', 'comer', 'proyecto', 'estudiar'];
+
+pendientes.forEach(pendiente => {
+    console.log(pendiente)
+})
+
+
+const arreglo1 = [1, 1, 2, 3, 5, 8, 13, 21];
+
+arreglo1.forEach((item, indice) => {
+    console.log(`${item} Está en la posición ${indice}`)
+})
+
+const carrito3 =[
+    { nombre: 'Televisor', precio: 500},
+    { nombre: 'Nevera', precio: 5500},
+    { nombre: 'Estufa', precio: 1500},
+    { nombre: 'Computador', precio: 100},
+    { nombre: 'Altavoz', precio: 1500},
+    {nombre: 'Lavadora', precio: 3500}
+]
+
+carrito3.forEach((producto) => {
+    console.log(producto);
+})
+
+
+const carrito4 =[
+    { nombre: 'Congas', precio: 500},
+    { nombre: 'Nevera', precio: 5500},
+    { nombre: 'Estufa', precio: 1500},
+    { nombre: 'Timbales', precio: 100},
+    { nombre: 'Altavoz', precio: 1500},
+    {nombre: 'Plancha', precio: 3500}
+]
+
+carrito4.forEach(item => console.log(item.nombre));
+//forma abreviada para una sola línea//
+
+carrito4.map(item => console.log(item));
+//crea un arreglo nuevo//
 
